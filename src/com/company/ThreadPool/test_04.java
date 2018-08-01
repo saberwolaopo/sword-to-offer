@@ -21,15 +21,15 @@ public class test_04 {
         LinkedBlockingDeque linked = new LinkedBlockingDeque<Runnable>();
         ArrayBlockingQueue array = new ArrayBlockingQueue<Runnable>(2);
         SynchronousQueue sync = new SynchronousQueue<Runnable>();
-        ThreadPoolExecutor pool = new ThreadPoolExecutor(2,3,5, TimeUnit.SECONDS,sync);
+        ThreadPoolExecutor pool = new ThreadPoolExecutor(2,3,5, TimeUnit.SECONDS,linked);
         pool.execute(new MyRunnable());//1
         pool.execute(new MyRunnable());//2
         pool.execute(new MyRunnable());//3
-//        pool.execute(new MyRunnable());//4
-//        pool.execute(new MyRunnable());//5
-//        pool.execute(new MyRunnable());//6
+        pool.execute(new MyRunnable());//4
+        pool.execute(new MyRunnable());//5
+        pool.execute(new MyRunnable());//6
         System.out.println("核心池数量:"+pool.getCorePoolSize());
         System.out.println("线程池数量:"+pool.getPoolSize());
-        System.out.println("队列长度:"+sync.size());
+        System.out.println("队列长度:"+linked.size());
     }
 }

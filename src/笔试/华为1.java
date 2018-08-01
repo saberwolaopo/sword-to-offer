@@ -1,5 +1,6 @@
 package 笔试;
 
+import java.util.HashMap;
 import java.util.Scanner;
 
 /*
@@ -31,7 +32,6 @@ public class 华为1 {
             System.out.println(fun(i));
         }
     }
-
     private static int fun(int i) {
         int result = 0;
         if(i<2){
