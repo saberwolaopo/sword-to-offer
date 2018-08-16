@@ -26,6 +26,11 @@ public class Demo {
         map.get(2).equals(s1);
         ConcurrentHashMap<Integer,Integer> concurrentHashMap = new ConcurrentHashMap<>();
         concurrentHashMap.put(1,2);
+        String str=null;
+        str.concat("abc");
+        str.concat("123");
+        System.out.println(str);
+
 
     }
     private static class Student{
