@@ -42,7 +42,7 @@ public class Homework {
         }
         for(int i = 0;i<reardatalist.size();i++){
             int singlerealdata[] = reardatalist.get(i);
-            System.out.println(Arrays.toString(singlerealdata));
+//            System.out.println(Arrays.toString(singlerealdata));
             int x = singlerealdata[0];
             int y = singlerealdata[1];
             result[x][y] = "[R] ";

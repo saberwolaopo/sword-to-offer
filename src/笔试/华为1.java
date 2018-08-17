@@ -1,6 +1,5 @@
 package 笔试;
 
-import java.util.HashMap;
 import java.util.Scanner;
 
 /*

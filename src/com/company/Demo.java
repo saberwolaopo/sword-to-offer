@@ -26,10 +26,11 @@ public class Demo {
         map.get(2).equals(s1);
         ConcurrentHashMap<Integer,Integer> concurrentHashMap = new ConcurrentHashMap<>();
         concurrentHashMap.put(1,2);
-        String str=null;
-        str.concat("abc");
-        str.concat("123");
-        System.out.println(str);
+//        String str=null;
+//        str.concat("abc");
+//        str.concat("123");
+        System.out.println(20152015%2016);
+        System.out.println(trailingZeroes(10000));
 
 
     }
@@ -53,5 +54,12 @@ public class Demo {
             this.age = age;
         }
     }
-
+    public static int trailingZeroes(int n) {
+        int count=0;
+        while(n!=0){
+            count+=n/5;
+            n=n/5;
+        }
+        return count;
+    }
 }
