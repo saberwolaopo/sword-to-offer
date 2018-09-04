@@ -13,7 +13,7 @@ public class merge_two_sorted_lists {
         if(l1 == null ){
             return l2;
         }
-        if(l1 != null ){
+        if(l2 == null ){
             return l1;
         }
         ListNode node = null;
