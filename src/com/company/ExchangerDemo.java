@@ -23,7 +23,7 @@ public class ExchangerDemo {
             try {
                 System.out.println("女生慢慢的从教室你里出来......");
                 TimeUnit.SECONDS.sleep(3);
-                //男生对女生说的话
+                //女生对男生说的话
                 String toboy = exchanger.exchange("我也很喜欢你......");
                 System.out.println("男孩儿说：" + toboy);
             } catch (InterruptedException e) {
